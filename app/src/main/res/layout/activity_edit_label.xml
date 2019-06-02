@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c语言"/>
+        <Spinner
+            android:id="@+id/spinner_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grades"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="java"/>
+        <Spinner
+            android:id="@+id/spinner_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grades"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox_kotlin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kotlin"/>
+        <Spinner
+            android:id="@+id/spinner_kotlin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grades"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox_python"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="python"/>
+        <Spinner
+            android:id="@+id/spinner_python"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grades"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/checkbox_uwp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="uwp"/>
+    <Spinner
+        android:id="@+id/spinner_uwp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/grades"
+        />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/label_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"/>
+
+</LinearLayout>

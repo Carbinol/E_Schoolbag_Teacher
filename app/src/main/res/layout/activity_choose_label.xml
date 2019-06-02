@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="特征一"/>
+        <Button
+            android:id="@+id/label_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="选择"/>
+        <TextView
+            android:id="@+id/label_detail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:layout_marginLeft="10dp"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="特征二"/>
+        <Button
+            android:id="@+id/label_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="选择"/>
+        <TextView
+            android:id="@+id/label_detail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:layout_marginLeft="10dp"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="特征三"/>
+        <Button
+            android:id="@+id/label_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="选择"/>
+        <TextView
+            android:id="@+id/label_detail3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:layout_marginLeft="10dp"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="特征选择说明：
+\n每个特征内各选择项间为“而且”关系
+\n最多可选择三个特征
+\n三个特征之间为“或者”关系，三项均为空则为所有人可见
+\n例如：
+\n特征一为“java成绩为及格而且kotlin成绩为中”
+\n特征二为“python成绩为中”，特征三为空，则
+\npython成绩为中，java成绩为及格，kotlin成绩为中的学生可以查看此题目
+\npython成绩为中，java成绩为中，kotlin成绩为中的学生可以查看此题目
+\npython成绩为中，java成绩为及格，kotlin成绩为良的学生可以查看此题目
+\npython成绩为中，java成绩为中，kotlin成绩为良的学生可以查看此题目
+\npython成绩为良，java成绩为及格，kotlin成绩为中的学生可以查看此题目
+\npython成绩为良，java成绩为中，kotlin成绩为中的学生不可以查看此题目
+\npython成绩为良，java成绩为及格，kotlin成绩为良的学生不可以查看此题目
+\npython成绩为良，java成绩为中，kotlin成绩为良的学生不可以查看此题目"/>
+
+</LinearLayout>

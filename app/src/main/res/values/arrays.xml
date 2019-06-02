@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grades">
+        <item>优</item>
+        <item>良</item>
+        <item>中</item>
+        <item>及格</item>
+        <item>不及格</item>
+    </string-array>
+</resources>
