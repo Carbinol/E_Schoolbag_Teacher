@@ -70,7 +70,9 @@ public class ChooseLabelActivity extends AppCompatActivity {
                 int resultCode = 0;
                 Intent intent = new Intent();
                 if(i != 0){
-                    policy += " 1of" + i + " ";
+                    if(i != 1) {
+                        policy += " 1of" + i + " ";
+                    }
                     resultCode = 1;
                 }
                 Log.d(TAG, policy);

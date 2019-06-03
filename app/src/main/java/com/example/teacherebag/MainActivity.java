@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.teacherebag.CheckStudentList.TeacherCourseListActivity;
+import com.example.teacherebag.CheckTWList.CheckTWActivity;
 import com.example.teacherebag.NewTeacherWork.CourseListTeacherWorkActivity;
 import com.example.teacherebag.User.LoginActivity;
 import com.example.teacherebag.Classes.UserDataDetail;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     public UserDataDetail userDataDetail;
 
+    public static String teacherId = "";
 
     public static CookieJar cookieJar = new CookieJar() {
         //Cookie缓存区
@@ -98,6 +100,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button checkTeacherWork = (Button)findViewById(R.id.check_teacher_work);
+        checkTeacherWork.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CheckTWActivity.class);
+                startActivity(intent);
+            }
+        });
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
@@ -109,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
                     Gson gson = new Gson();
                     userDataDetail = gson.fromJson(userData, UserDataDetail.class);
                     Log.d(TAG, userDataDetail.getTeacher().getTeacherId());
+                    teacherId = userDataDetail.getTeacher().getTeacherId();
                 }
                 default:
         }

@@ -21,4 +21,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="发布新题目"/>
+
+    <Button
+        android:id="@+id/check_teacher_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看题目列表"/>
 </LinearLayout>

@@ -29,6 +29,10 @@ public class EditLabelActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_label);
 
+        labelString = "";
+        labelText = "";
+        labelNumber = 0;
+
         Intent intent = getIntent();
         labelNumber = intent.getIntExtra("LabelNumber", 0);
 
@@ -159,7 +163,9 @@ public class EditLabelActivity extends AppCompatActivity {
                 }
                 if(i != 0){
                     resultCode = 10 + labelNumber;
+                    if(i != 1){
                     labelString += " " + i + "of" + i +" ";
+                    }
                 }
                 Log.d(TAG, labelString);
                 Log.d(TAG, labelText);

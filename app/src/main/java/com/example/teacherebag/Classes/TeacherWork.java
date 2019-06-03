@@ -5,20 +5,20 @@ public class TeacherWork {
 
     private String policy;
 
-    private Course course;
+    private String courseId;
 
     private String title;
 
-    private String encContent;
+    private String content;
 
     private String deadline;
 
-    public TeacherWork(String teacherId, String policy, Course course, String title, String encContent, String deadline) {
+    public TeacherWork(String teacherId, String policy, String courseId, String title, String content, String deadline) {
         this.teacherId = teacherId;
         this.policy = policy;
-        this.course = course;
+        this.courseId = courseId;
         this.title = title;
-        this.encContent = encContent;
+        this.content = content;
         this.deadline = deadline;
     }
 
@@ -30,16 +30,16 @@ public class TeacherWork {
         return policy;
     }
 
-    public Course getCourse() {
-        return course;
+    public String getCourseId() {
+        return courseId;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public String getEncContent() {
-        return encContent;
+    public String getContent() {
+        return content;
     }
 
     public String getDeadline() {

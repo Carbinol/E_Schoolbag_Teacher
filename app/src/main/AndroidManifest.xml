@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewTeacherWork.EditLabelActivity"></activity>
+        <activity android:name=".CheckTWList.DecryptActivity"></activity>
+        <activity android:name=".CheckTWList.CheckTWActivity" />
+        <activity android:name=".NewTeacherWork.EditLabelActivity" />
         <activity android:name=".NewTeacherWork.ChooseLabelActivity" />
         <activity android:name=".NewTeacherWork.NewTeacherWorkActivity" />
         <activity android:name=".NewTeacherWork.CourseListTeacherWorkActivity" />
