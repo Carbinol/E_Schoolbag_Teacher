@@ -1,6 +1,8 @@
 package com.example.teacherebag.Classes;
 
 public class TeacherWork {
+    private long teacherWorkId;
+
     private String teacherId;
 
     private String policy;
@@ -20,6 +22,10 @@ public class TeacherWork {
         this.title = title;
         this.content = content;
         this.deadline = deadline;
+    }
+
+    public long getTeacherWorkId() {
+        return teacherWorkId;
     }
 
     public String getTeacherId() {

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.teacherebag.CheckStudentList.TeacherCourseListActivity;
+import com.example.teacherebag.CheckStudentWork.TeacherWorkInStudentWorkActivity;
 import com.example.teacherebag.CheckTWList.CheckTWActivity;
 import com.example.teacherebag.NewTeacherWork.CourseListTeacherWorkActivity;
 import com.example.teacherebag.User.LoginActivity;
@@ -105,6 +106,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CheckTWActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button checkStudentWork = (Button)findViewById(R.id.check_student_work);
+        checkStudentWork.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TeacherWorkInStudentWorkActivity.class);
                 startActivity(intent);
             }
         });
