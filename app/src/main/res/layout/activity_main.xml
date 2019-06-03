@@ -3,34 +3,54 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
+
+    <ImageButton
+        android:layout_marginTop="5dp"
         android:id="@+id/login_button_mainpage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="登录"/>
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:background="#2a458c"
+        android:src="@drawable/login"/>
 
-    <Button
+    <ImageButton
+        android:layout_marginTop="5dp"
         android:id="@+id/show_student_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="查看学生列表"/>
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:background="#2a458c"
+        android:src="@drawable/check_student_list"/>
 
-    <Button
+    <ImageButton
+        android:layout_marginTop="5dp"
         android:id="@+id/new_teacher_work"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="发布新题目"/>
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:background="#2a458c"
+        android:src="@drawable/new_teacher_work"/>
 
-    <Button
+    <ImageButton
+        android:layout_marginTop="5dp"
         android:id="@+id/check_teacher_work"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="查看题目列表"/>
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:background="#2a458c"
+        android:src="@drawable/check_teacher_work"/>
 
-
-    <Button
+    <ImageButton
+        android:layout_marginTop="5dp"
         android:id="@+id/check_student_work"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="查看学生提交作业"/>
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:background="#2a458c"
+        android:src="@drawable/check_student_work"/>
 </LinearLayout>

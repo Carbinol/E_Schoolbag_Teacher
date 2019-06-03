@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.teacherebag.CheckStudentList.TeacherCourseListActivity;
 import com.example.teacherebag.CheckStudentWork.TeacherWorkInStudentWorkActivity;
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button loginButtonMainpage = (Button)findViewById(R.id.login_button_mainpage);
+        ImageButton loginButtonMainpage = (ImageButton)findViewById(R.id.login_button_mainpage);
         loginButtonMainpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button teacherCourseButton = (Button)findViewById(R.id.show_student_list);
+        ImageButton teacherCourseButton = (ImageButton) findViewById(R.id.show_student_list);
         teacherCourseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button newTeacherWork = (Button)findViewById(R.id.new_teacher_work);
+        ImageButton newTeacherWork = (ImageButton)findViewById(R.id.new_teacher_work);
         newTeacherWork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button checkTeacherWork = (Button)findViewById(R.id.check_teacher_work);
+        ImageButton checkTeacherWork = (ImageButton)findViewById(R.id.check_teacher_work);
         checkTeacherWork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -110,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button checkStudentWork = (Button)findViewById(R.id.check_student_work);
+        ImageButton checkStudentWork = (ImageButton)findViewById(R.id.check_student_work);
         checkStudentWork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

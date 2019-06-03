@@ -234,7 +234,7 @@ public class NewTeacherWorkActivity extends AppCompatActivity {
             public void run() {
                 try {
                     Request request = new Request.Builder()
-                            .url("http://192.168.1.105:8080/key")
+                            .url("https://wenkui0229.top:18080/key")
                             .build();
                     Response response = MainActivity.client.newCall(request).execute();
                     Log.d(TAG, response.code()+"");
@@ -291,7 +291,7 @@ public class NewTeacherWorkActivity extends AppCompatActivity {
                     final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
                     RequestBody requestBody = RequestBody.create(JSON, json);
                     Request request = new Request.Builder()
-                            .url("http://192.168.1.105:8080/teachers/work")
+                            .url("https://wenkui0229.top:18080/teachers/work")
                             .post(requestBody)
                             .build();
                     Response response = MainActivity.client.newCall(request).execute();
